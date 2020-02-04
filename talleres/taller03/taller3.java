@@ -13,9 +13,12 @@ public class Taller3 {
 		System.out.println("Mover disco de "+ origen + " a "+ destino);
 	    }
 	else {
-	    torresDeHannoiAux(n - 1, origen, intermedio,destino );
+	    torresDeHannoiAux(n - 1, origen, destino,intermedio );
 	    System.out.println(" Disco "+ n + " de "+ origen + " a "+ destino);
 	    torresDeHannoiAux(n - 1, intermedio, origen, destino);
 	}
     }
+    
+    
+    
 		
