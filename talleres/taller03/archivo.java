@@ -1,5 +1,4 @@
-
- * @author Nelson Barrios, Santiago Montoya
+* @author Nelson Barrios, Santiago Montoya
  
 public class Taller3 {
 
@@ -26,19 +25,7 @@ public class Taller3 {
 	combinationsAux("", s); 
     }
 
-    /**
-     *
-     * El método combinationsAux es el core del proceso, en el se busca conseguir
-     * las posibles permutaciones que puede tener la cadena s 
-     * @param s es la cadena a permutar
-     * @param prefix cadena auxiliar donde se guarda la cadena de salida
-     *
-     * Las cadenas de salida tienes una longitud desde 0 hasta el lenght de la cadena s
-     * por simplicidad del ejercicio no se repiten letras y el orden de la secuencia 
-     * no supone importancia, es decir, la cadena AB es igual a la cadena BA.
-     * Ej: para la cadena ABC se tiene la salida: { A, AB, ABC, AC, B, BC, C}
-     *
-     */
+    
     private static void combinationsAux(String prefix, String s) {  
 	if (s.length() _____ 0) { 
 	    System.out.println(prefix _____ s.charAt(0));   
