@@ -1,23 +1,17 @@
-/**
- *La clase Taller4  tiene como objetivo dar solución al taller5
- *
- *@autor Nelson Barrios, Santiago Montoya
- 
-    
-   public class taller4
-   {
+//@autor Nelson Barrios, Santiago Montoya
+
+public class taller4
+{
     public static int maximo(int [] nums){
         return maximoAux(nums, nums[nums.length-1], nums.length-1);
     }
     public static int maximoAux(int [] nums, int max, int start){
         if(start<0){
             return max;
-        }
-        else{
+        } else {
             if(nums[start]>=max){
                 return maximoAux(nums, nums[start], start-1);
-            } 
-            else return maximoAux(nums, max, start-1);
+            } else return maximoAux(nums, max, start-1);
         }
     }
     
