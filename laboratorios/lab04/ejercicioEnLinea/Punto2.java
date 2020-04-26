@@ -21,9 +21,9 @@ public class punto2 {
 			nodo = new Nodo(n)
 			return nodo;
 		} if (n < nodo.dato) {
-			nodo.izq = insertarVal(nodo.izq, n);
+			nodo.izq = insertarArbol(nodo.izq, n);
 		} else if (n > nodo.dato) {
-			nodo.der = insertarVal(nodo,der, n)
+			nodo.der = insertarArbol(nodo,der, n)
 		}
 		return nodo;			
 	}
@@ -33,10 +33,10 @@ public class punto2 {
 			return true;
 		} else if (nodo.dato > n) {
 			if (nodo == null) return false;
-			buscarVal(nodo.der, n);
+			buscarArbol(nodo.der, n);
 		} else {
 			if (nodo == null) return false;
-			buscarVal(nodo.izq, n);
+			buscarArbol(nodo.izq, n);
 		}
 		return false;
 	}
