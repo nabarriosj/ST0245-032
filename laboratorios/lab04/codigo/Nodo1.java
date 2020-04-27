@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 public class Nodo1 {
 	private String nombre;
-	private double tamaño;
+	private double tamanio;
 	private Nodo1 directorio;
 	private ArrayList<Nodo1> archivos = new ArrayList<>();
 
-	public Nodo1(String nombre, double tamaño, Nodo1 directorio) {
+	public Nodo1(String nombre, double tamanio, Nodo1 directorio) {
 		this.nombre = nombre;
-		this.tamaño = tamaño;
+		this.tamanio= tamanio;
 		archivos.add(directorio)
 	}
 
@@ -24,15 +24,15 @@ public class Nodo1 {
 		return directorio;
 	}
 
-	public double getTamaño() {
-		return tamaño;
+	public double getTamanio {
+		return tamanio;
 	}	
 
-	public int getTamañanoArchivos() {
+	public int getTamanioArchivos() {}
 		return files.size();
 	}
 
-	public void añadirArchivo(Nodo1 nodo) {
+	public void aÃ±adirArchivo(Nodo1 nodo) {
 		archivos.add(nodo);
 	}
 
